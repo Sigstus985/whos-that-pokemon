@@ -1,5 +1,10 @@
-/* styles.css */
-body {
-    background-color: red;
-  }
-  
+:root{
+  --yellow: #F9C934;
+  --blue: #355FA0;
+  --green: #0EAE03;
+  --red: #B11010;
+}  
+
+body{
+  background-color: var(--yellow);
+}

@@ -24,6 +24,7 @@ body {
 
 .score {
 	color: var(--blue);
+	font-size: 1.5rem;
 }
 
 .sprite {
@@ -52,6 +53,9 @@ body {
 
 @media (min-width: 425px) {
 	/* here goes the small tablet style */
+	.score {
+		font-size: 1.8rem;
+	}
 	.button {
 		font-size: 1.8rem;
 	}
@@ -62,14 +66,19 @@ body {
 	.buttons {
 		flex-flow: row wrap;
 	}
+	.score {
+		font-size: 2.5rem;
+	}
 	.button {
 		width: 40%;
 		font-size: 2.5rem;
 		margin: 10px;
-		padding-block: 30px;
+		padding-block: 25px;
 	}
 }
 
 @media (min-width: 1024px) {
 	/* here goes the computer style */
+	.button {
+	}
 }

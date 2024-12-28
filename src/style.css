@@ -3,24 +3,73 @@
 	--blue: #355fa0;
 	--green: #0eae03;
 	--red: #b11010;
+	--white: #fff;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
 }
 
 body {
 	background-color: var(--yellow);
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo {
-	max-width: 120px;
+	max-width: 250px;
+	margin-block: 15px;
+}
+
+.score {
+	color: var(--blue);
+}
+
+.sprite {
+	width: min(250px, 80%);
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	background-color: var(--blue);
+	color: var(--white);
+	font-size: 1.5rem;
+	padding-block: 10px;
+	border-style: none;
+	border-radius: 10px;
+	margin: 5px;
+	width: max(200px, 70%);
+	cursor: pointer;
+	transition-duration: 0.3s;
 }
 
 @media (min-width: 425px) {
 	/* here goes the small tablet style */
+	.button {
+		font-size: 1.8rem;
+	}
 }
 
 @media (min-width: 600px) {
-  /* here goes the big tablet style */
+	/* here goes the big tablet style */
+	.buttons {
+		flex-flow: row wrap;
+	}
+	.button {
+		width: 40%;
+		font-size: 2.5rem;
+		margin: 10px;
+		padding-block: 30px;
+	}
 }
 
 @media (min-width: 1024px) {
-	  /* here goes the computer style */
+	/* here goes the computer style */
 }

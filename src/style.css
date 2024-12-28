@@ -1,10 +1,26 @@
-:root{
-  --yellow: #F9C934;
-  --blue: #355FA0;
-  --green: #0EAE03;
-  --red: #B11010;
-}  
+:root {
+	--yellow: #f9c934;
+	--blue: #355fa0;
+	--green: #0eae03;
+	--red: #b11010;
+}
 
-body{
-  background-color: var(--yellow);
+body {
+	background-color: var(--yellow);
+}
+
+.logo {
+	max-width: 120px;
+}
+
+@media (min-width: 425px) {
+	/* here goes the small tablet style */
+}
+
+@media (min-width: 600px) {
+  /* here goes the big tablet style */
+}
+
+@media (min-width: 1024px) {
+	  /* here goes the computer style */
 }

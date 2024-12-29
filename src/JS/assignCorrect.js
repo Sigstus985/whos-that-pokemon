@@ -1,6 +1,7 @@
 import { fetchData } from "./api";
 
-export function assignCorrect() {
+//kanske ha kvar ifall det är bättre practice eller lättare
+/* export function assignCorrect() {
 	fetchData();
 	const pokeArray = JSON.parse(localStorage.getItem("unfinArray"));
 	const correctNumber = Math.floor(Math.random() * 4);
@@ -13,5 +14,6 @@ export function assignCorrect() {
 			pokeArray[i][key] = false;
 		}
 	}
+    console.log(pokeArray)
     localStorage.setItem("finArray", JSON.stringify(pokeArray))
-}
+} */

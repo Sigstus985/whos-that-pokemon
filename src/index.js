@@ -3,5 +3,7 @@ import "./style.css"
 //import { playIntro } from "./JS/playIntro";
 
 import { assignCorrect } from "./JS/assignCorrect";
+import { domManip } from "./JS/DOM";
 
-assignCorrect()
+//assignCorrect()
+domManip()

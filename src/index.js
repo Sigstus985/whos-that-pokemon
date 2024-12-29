@@ -4,6 +4,9 @@ import "./style.css"
 
 import { assignCorrect } from "./JS/assignCorrect";
 import { domManip } from "./JS/DOM";
+import { check } from "./JS/buttonPress";
+import { fetchData } from "./JS/api";
 
-//assignCorrect()
+fetchData()
+assignCorrect()
 domManip()

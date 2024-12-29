@@ -17,3 +17,8 @@ import { fetchData } from "./api";
     console.log(pokeArray)
     localStorage.setItem("finArray", JSON.stringify(pokeArray))
 } */
+
+export function assignCorrect() {
+	const correctNumber = Number(Math.floor(Math.random() * 4));
+	localStorage.setItem("correctNum", correctNumber)
+}

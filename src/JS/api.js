@@ -8,5 +8,5 @@ export async function fetchData() {
 		let data = await response.json();
 		pokeArray.push(data);
 	}
-	localStorage.setItem("pokeArray", JSON.stringify(pokeArray))
+	localStorage.setItem("unfinArray", JSON.stringify(pokeArray))
 }

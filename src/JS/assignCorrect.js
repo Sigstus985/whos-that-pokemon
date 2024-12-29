@@ -2,7 +2,7 @@ import { fetchData } from "./api";
 
 export function assignCorrect() {
 	fetchData();
-	const pokeArray = JSON.parse(localStorage.getItem("pokeArray"));
+	const pokeArray = JSON.parse(localStorage.getItem("unfinArray"));
 	const correctNumber = Math.floor(Math.random() * 4);
 	console.log(correctNumber);
 	for (let i = 0; i < pokeArray.length; i++) {
@@ -13,5 +13,5 @@ export function assignCorrect() {
 			pokeArray[i][key] = false;
 		}
 	}
-    console.log(pokeArray)
+    localStorage.setItem("finArray", JSON.stringify(pokeArray))
 }

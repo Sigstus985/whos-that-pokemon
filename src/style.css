@@ -1,6 +1,7 @@
 :root {
 	--yellow: #f9c934;
 	--blue: #355fa0;
+	--dark-blue: #1e3a68;
 	--green: #0eae03;
 	--red: #b11010;
 	--white: #fff;
@@ -48,14 +49,22 @@ body {
 	margin: 5px;
 	width: max(200px, 70%);
 	cursor: pointer;
-	transition-duration: 0.3s;
+	transition-duration: 0.2s;
 }
 
+.button:active{
+	background-color: var(--dark-blue);
+}
+
+.incorrect{
+	background-color: var(--red);
+}
 .correct{
 	background-color: var(--green);
 }
-.incorrect{
-	background-color: var(--red);
+
+.next{
+	display: none;
 }
 
 @media (min-width: 425px) {

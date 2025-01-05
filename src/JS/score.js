@@ -7,9 +7,9 @@ export function displayScore() {
 }
 
 export function modifyScore(isCorrect) {
-    if(isCorrect) {
-        console.log("Correct!")
-    } else {
-        console.log("WRONG DOOFUS");
-    }
+	if (isCorrect) {
+		score += 1;
+	}
+	questions += 1;
+    displayScore()
 }

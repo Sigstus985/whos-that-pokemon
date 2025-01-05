@@ -1,6 +1,7 @@
 import { changeBtns } from "./DOM";
-import { showBtn } from "./newRound";
+import { toggleBtn } from "./newRound";
 import { modifyScore } from "./score";
+import { advance } from "./newRound";
 
 document.querySelectorAll(".button").forEach(function (button) {
 	button.addEventListener("click", (event) => {
@@ -11,15 +12,16 @@ document.querySelectorAll(".button").forEach(function (button) {
 export function check(buttonNum) {
 	const correctNumber = Number(localStorage.getItem("correctNum"));
 	//console.log(Number(document.getElementById().value))
-	if (correctNumber === Number(buttonNum)) {
-		//console.log("correct!");
+	if (correctNumber === buttonNum) {
 		modifyScore(true)
+		console.log("True!")
+		console.log(buttonNum)
 	} else if (buttonNum) {
-		//console.log("WRONG DOOFUS");
 		modifyScore(false)
+		console.log("False!")
 	} else {
-		
+		advance()
 	}
 	changeBtns();
-	showBtn()
+	toggleBtn()
 }

@@ -63,7 +63,7 @@ body {
 	background-color: var(--green);
 }
 
-.next{
+.hidden{
 	display: none;
 }
 

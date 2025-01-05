@@ -1,13 +1,13 @@
-const nextBtn = document.getElementById("next")
+const nextBtn = document.getElementById("next");
 
 nextBtn.addEventListener("click", () => {
+	advance();
+});
 
-})
-
-export function showBtn() {
-    nextBtn.style.display = "inline"
+export function toggleBtn() {
+	nextBtn.classList.toggle("hidden")
 }
 
-function advance() {
-    
+export function advance() {
+    toggleBtn()
 }

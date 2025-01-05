@@ -1,13 +1,23 @@
+import { fetchData } from "./api";
+import { assignCorrect } from "./assignCorrect";
+import { displayQuestion, toggleBtns } from "./DOM";
+import { updateQuestion } from "./score";
+
 const nextBtn = document.getElementById("next");
 
-nextBtn.addEventListener("click", () => {
+document.getElementById("next").addEventListener("click", () => {
 	advance();
 });
 
 export function toggleBtn() {
-	nextBtn.classList.toggle("hidden")
+	nextBtn.classList.toggle("hidden");
 }
 
 export function advance() {
-    toggleBtn()
+	fetchData();
+	toggleBtn();
+	toggleBtns();
+	assignCorrect();
+	displayQuestion();
+	updateQuestion();
 }

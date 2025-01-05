@@ -1,5 +1,3 @@
-import { fetchData } from "./api";
-
 const button1 = document.getElementById("btn1");
 const button2 = document.getElementById("btn2");
 const button3 = document.getElementById("btn3");
@@ -27,18 +25,19 @@ export function displayQuestion() {
 	button4.textContent = `${capitalize(pokemon4)}`;
 }
 
-export function changeBtns() {
+export function toggleBtns() {
 	const correctNumber = Number(localStorage.getItem("correctNum"));
 	const correctBtn = document.getElementById(`btn${correctNumber + 1}`);
 
-	button1.classList.add("incorrect");
-	button2.classList.add("incorrect");
-	button3.classList.add("incorrect");
-	button4.classList.add("incorrect");
-	correctBtn.classList.add("correct");
+	button1.classList.toggle("incorrect");
+	button2.classList.toggle("incorrect");
+	button3.classList.toggle("incorrect");
+	button4.classList.toggle("incorrect");
+	correctBtn.classList.toggle("correct")
 
-	button1.disabled = true;
-	button2.disabled = true;
-	button3.disabled = true;
-	button4.disabled = true;
+
+	button1.disabled = !button1.disabled
+	button2.disabled = !button2.disabled
+	button3.disabled = !button3.disabled
+	button4.disabled = !button4.disabled
 }

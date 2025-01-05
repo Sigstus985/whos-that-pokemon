@@ -6,16 +6,16 @@ const button3 = document.getElementById("btn3");
 const button4 = document.getElementById("btn4");
 const sprite = document.getElementById("sprite");
 
-export function domManip() {
-    //fetch necessary information
+export function displayQuestion() {
+	//fetch necessary information
 	const pokeArray = JSON.parse(localStorage.getItem("unfinArray"));
-	const correctNumber = Number(localStorage.getItem("correctNum"))
+	const correctNumber = Number(localStorage.getItem("correctNum"));
 	//function to correctly capitalize pokemon names
 	function capitalize(val) {
 		return String(val).charAt(0).toUpperCase() + String(val).slice(1);
 	}
 	//render image of the pokemon here
-	sprite.src = pokeArray[correctNumber].sprites.front_default
+	sprite.src = pokeArray[correctNumber].sprites.front_default;
 	//change text on the buttons here
 	const pokemon1 = pokeArray[0].name;
 	const pokemon2 = pokeArray[1].name;
@@ -25,4 +25,20 @@ export function domManip() {
 	button2.textContent = `${capitalize(pokemon2)}`;
 	button3.textContent = `${capitalize(pokemon3)}`;
 	button4.textContent = `${capitalize(pokemon4)}`;
+}
+
+export function changeBtns() {
+	const correctNumber = Number(localStorage.getItem("correctNum"));
+	const correctBtn = document.getElementById(`btn${correctNumber + 1}`);
+
+	button1.classList.add("incorrect");
+	button2.classList.add("incorrect");
+	button3.classList.add("incorrect");
+	button4.classList.add("incorrect");
+	correctBtn.classList.add("correct");
+
+	button1.disabled = true;
+	button2.disabled = true;
+	button3.disabled = true;
+	button4.disabled = true;
 }

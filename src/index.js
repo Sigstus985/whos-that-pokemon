@@ -3,10 +3,12 @@ import "./style.css"
 //import { playIntro } from "./JS/playIntro";
 
 import { assignCorrect } from "./JS/assignCorrect";
-import { domManip } from "./JS/DOM";
+import { displayQuestion } from "./JS/DOM";
 import { check } from "./JS/buttonPress";
 import { fetchData } from "./JS/api";
+import { displayScore } from "./JS/score";
 
 fetchData()
 assignCorrect()
-domManip()
+displayQuestion()
+displayScore()

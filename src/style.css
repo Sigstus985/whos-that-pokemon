@@ -51,6 +51,13 @@ body {
 	transition-duration: 0.3s;
 }
 
+.correct{
+	background-color: var(--green);
+}
+.incorrect{
+	background-color: var(--red);
+}
+
 @media (min-width: 425px) {
 	/* here goes the small tablet style */
 	.score {

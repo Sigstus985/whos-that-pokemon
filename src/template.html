@@ -7,10 +7,9 @@
 	</head>
 	<!-- <button id="go">Lets go</button> -->
 	<img class="logo" id="logo" src="media/logo.png" alt="picture" />
-	<div class="start">
-		<h2>Let's play a game!</h2>
+	<div class="intro" id="intro">
 		<h2>How many rounds would you like to play?</h2>
-		<input type="range" min="10" max="20" />
+		<input id="slider" type="range" min="10" max="20" step="1" />
 		<img
 			class="pokeball"
 			id="pokeball"
@@ -19,7 +18,7 @@
 		/>
 		<h2>Press the pokéball to start!</h2>
 	</div>
-	<div id="game" class="hidden">
+	<div class="hidden" id="game">
 		<h2 class="question" id="question">This is the current question number</h2>
 		<h2 class="score" id="score">Here is your score</h2>
 		<img

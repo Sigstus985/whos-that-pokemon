@@ -14,15 +14,9 @@ export function check(buttonNum) {
 	//console.log(Number(document.getElementById().value))
 	if (correctNumber === buttonNum) {
 		modifyScore(true);
-		console.log("True!");
-		console.log(buttonNum);
-		console.log(correctNumber);
 		toggleBtn()
 	} else {
 		modifyScore(false);
-		console.log("False!");
-		console.log(buttonNum);
-		console.log(correctNumber);
 		toggleBtn()
 	}
 	toggleBtns();

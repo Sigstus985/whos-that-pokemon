@@ -4,6 +4,7 @@ const button3 = document.getElementById("btn3");
 const button4 = document.getElementById("btn4");
 const sprite = document.getElementById("sprite");
 
+
 export function displayQuestion() {
 	//fetch necessary information
 	const pokeArray = JSON.parse(localStorage.getItem("unfinArray"));

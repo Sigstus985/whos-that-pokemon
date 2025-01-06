@@ -1,9 +1,6 @@
 /* export function playIntro() {
-	let audio = new Audio("intro.mp3");
+	const intro  = "/media/intro.mp3"
+	let audio = new Audio(intro);
 	audio.play();
 }
-
-document.getElementById("go").addEventListener("click", () => {
-	playIntro();
-});
  */

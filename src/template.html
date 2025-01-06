@@ -7,14 +7,33 @@
 	</head>
 	<!-- <button id="go">Lets go</button> -->
 	<img class="logo" id="logo" src="media/logo.png" alt="picture" />
-	<h2 class="question" id="question">This is the current question number</h2>
-	<h2 class="score" id="score">Here is your score</h2>
-	<img class="sprite" id="sprite" src="#" alt="a sprite of the relevant pokémon" />
-	<div class="buttons" id="buttons">
-		<button value="0" class="button" id="btn1">Crabominable</button>
-		<button value="1" class="button" id="btn2">Delphox</button>
-		<button value="2" class="button" id="btn3">Treeko</button>
-		<button value="3" class="button" id="btn4">Snom</button>
+	<div class="start">
+		<h2>Let's play a game!</h2>
+		<h2>How many rounds would you like to play?</h2>
+		<input type="range" min="10" max="20" />
+		<img
+			class="pokeball"
+			id="pokeball"
+			src="media/pokeball.png"
+			alt="a pixelart of a pokeball"
+		/>
+		<h2>Press the pokéball to start!</h2>
 	</div>
-	<button class="next-button hidden" id="next">Next</button>
+	<div id="game" class="hidden">
+		<h2 class="question" id="question">This is the current question number</h2>
+		<h2 class="score" id="score">Here is your score</h2>
+		<img
+			class="sprite"
+			id="sprite"
+			src="#"
+			alt="a sprite of the relevant pokémon"
+		/>
+		<div class="buttons" id="buttons">
+			<button value="0" class="button" id="btn1"></button>
+			<button value="1" class="button" id="btn2"></button>
+			<button value="2" class="button" id="btn3"></button>
+			<button value="3" class="button" id="btn4"></button>
+		</div>
+		<button class="next-button hidden" id="next">Next</button>
+	</div>
 </html>

@@ -25,21 +25,28 @@ body {
 }
 
 .logo {
-	max-width: 250px;
-	margin-block: 15px;
+	max-width: 225px;
+	margin-top: 15px;
+}
+
+.rounds {
+	padding: 5%;
 }
 
 .pokeball {
-	max-width: 250px;
+	max-width: 225px;
+	margin-block: 30px;
 }
 
 .score {
 	color: var(--blue);
-	font-size: 1.5rem;
+	font-size: 2rem;
+	transition-duration: 0.4s;
 }
 
 .sprite {
-	width: min(250px, 80%);
+	width: min(200px, 70%);
+	transition-duration: 0.4s;
 }
 
 .buttons {
@@ -53,11 +60,11 @@ body {
 	background-color: var(--blue);
 	color: var(--white);
 	font-size: 1.5rem;
-	padding-block: 10px;
+	padding-block: 1.2vh;
 	border-style: none;
 	border-radius: 10px;
-	margin: 5px;
-	width: max(200px, 70%);
+	margin: 0px 10px 10px 10px;
+	width: max(175px, 70%);
 	cursor: pointer;
 	transition-duration: 0.2s;
 }
@@ -66,11 +73,11 @@ body {
 	background-color: var(--blue);
 	color: var(--white);
 	font-size: 1.5rem;
-	padding-block: 10px;
+	padding-block: 1.2vh;
 	border-style: none;
 	border-radius: 10px;
-	margin: 5px;
-	width: max(200px, 70%);
+	margin: 0px 10px 10px 10px;
+	width: 40%;
 	cursor: pointer;
 	transition-duration: 0.2s;
 }
@@ -92,32 +99,43 @@ body {
 
 @media (min-width: 425px) {
 	/* here goes the small tablet style */
-	.score {
-		font-size: 1.8rem;
-	}
-	.button {
-		font-size: 1.8rem;
-	}
-}
-
-@media (min-width: 600px) {
-	/* here goes the big tablet style */
 	.buttons {
 		flex-flow: row wrap;
 	}
 	.score {
-		font-size: 2.5rem;
+		font-size: 2rem;
+		position: absolute;
+		top: 15%;
+		right: 10%;
+	}
+	/* .button {
+		font-size: 1.8rem;
+	} */
+}
+
+@media (min-width: 550px) {
+	/* here goes the big tablet style */
+	.sprite {
+		width: 200px;
+	}
+	.buttons {
+		flex-flow: row wrap;
 	}
 	.button {
 		width: 40%;
 		font-size: 2.5rem;
 		margin: 10px;
-		padding-block: 25px;
+		padding-block: 5px;
+	}
+	.score{
+		font-size: 3rem;
 	}
 }
 
 @media (min-width: 1024px) {
 	/* here goes the computer style */
-	.button {
+	.sprite {
+		width: 250px;
 	}
+
 }

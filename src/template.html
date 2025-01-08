@@ -7,8 +7,8 @@
 	</head>
 	<!-- <button id="go">Lets go</button> -->
 	<img class="logo" id="logo" src="media/logo.png" alt="picture" />
-	<div class="intro" id="intro">
-		<h2 class="rounds" id="rounds">How many rounds would you like to play?</h2>
+	<section class="intro" id="intro">
+		<h2 class="rounds" id="rounds">Welcome! How many rounds would you like to play?</h2>
 		<input class="slider" id="slider" type="range" min="10" max="20" step="1" oninput="this.nextElementSibling.value = this.value"/>
 		<output class="output"></output>
 		<img
@@ -18,8 +18,8 @@
 			alt="a pixelart of a pokeball"
 		/>
 		<h2>Press the pokéball to start!</h2>
-	</div>
-	<div class="hidden" id="game">
+	</section>
+	<section class="hidden" id="game">
 		<h2 class="question" id="question">This is the current question number</h2>
 		<h2 class="score" id="score">Here is your score</h2>
 		<img
@@ -35,11 +35,11 @@
 			<button value="3" class="button" id="btn4"></button>
 		</div>
 		<button class="next-button hidden" id="next">Next</button>
-	</div>
-	<div class="hidden" id="finish"> 
+	</section>
+	<section class="hidden" id="finish"> 
 		<h2>Game over!</h2>
 		<h3>You're kinda bad at this...</h3>
 		<h2>Score here</h2>
 		<button class="button">Play again...</button>
-	</div>
+	</section>
 </html>

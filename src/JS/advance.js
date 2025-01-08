@@ -36,4 +36,5 @@ function newRound() {
 function endGame() {
 	document.getElementById("game").classList.add("hidden")
 	document.getElementById("finish").classList.remove("hidden")
+	
 }

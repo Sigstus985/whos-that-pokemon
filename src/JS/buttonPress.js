@@ -1,7 +1,7 @@
 import { toggleBtns } from "./DOM";
-import { toggleBtn } from "./newRound";
+import { toggleBtn } from "./advance";
 import { modifyScore } from "./score";
-import { advance } from "./newRound";
+import { advance } from "./advance";
 
 document.querySelectorAll(".button").forEach(function (button) {
 	button.addEventListener("click", (event) => {

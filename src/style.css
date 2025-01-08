@@ -30,7 +30,17 @@ body {
 }
 
 .rounds {
-	padding: 5%;
+	padding: 2% 10%;
+}
+
+.slider{
+
+}
+
+.output{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.5rem;
+	color: var(--dark-blue);
 }
 
 .pokeball {
@@ -139,3 +149,4 @@ body {
 	}
 
 }
+

@@ -16,16 +16,24 @@ export function toggleBtn() {
 export function advance() {
 	let numberOfTurns = Number(localStorage.getItem("numberOfTurns")) + 1
 	let currentQuestion = Number(localStorage.getItem("currentQuestion"))
-	console.log(numberOfTurns, currentQuestion)
 	if (currentQuestion < numberOfTurns){
-		fetchData();
-		toggleBtn()
-		toggleBtns()
-		assignCorrect()
-		displayQuestion();
-		updateQuestion();
+		newRound()
 	}
 	else {
-		console.log("The end!")
+		endGame()
 	}
+}
+
+function newRound() {
+	fetchData();
+	toggleBtn()
+	toggleBtns()
+	assignCorrect()
+	displayQuestion();
+	updateQuestion();
+}
+
+function endGame() {
+	document.getElementById("game").classList.add("hidden")
+	document.getElementById("finish").classList.remove("hidden")
 }

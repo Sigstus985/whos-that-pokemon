@@ -11,7 +11,7 @@ export function displayScore() {
 }
 
 export function updateQuestion() {
-	questionEl.textContent = `Question ${currentQuestion}`
+	questionEl.textContent = `Round ${currentQuestion}`
 }
 
 export function modifyScore(isCorrect) {

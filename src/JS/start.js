@@ -1,4 +1,4 @@
-import { fetchData } from "./api";
+import { setData } from "./api";
 import { assignCorrect } from "./assignCorrect";
 import { displayQuestion } from "./DOM";
 import { toggleBtn } from "./advance";
@@ -16,7 +16,7 @@ export function startGame() {
 	document.getElementById("game").classList.remove("hidden");
     localStorage.setItem("numberOfTurns", document.getElementById("slider").value)
 	//playIntro()
-    fetchData();
+    setData();
 	assignCorrect();
 	displayQuestion();
 	updateQuestion();

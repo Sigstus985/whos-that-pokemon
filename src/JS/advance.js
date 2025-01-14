@@ -1,7 +1,8 @@
-import { fetchData } from "./api";
+import { setData } from "./api";
 import { assignCorrect } from "./assignCorrect";
 import { displayQuestion, toggleBtns } from "./DOM";
 import { updateQuestion } from "./score";
+import { endGame } from "./DOM";
 
 const nextBtn = document.getElementById("next")
 
@@ -25,7 +26,7 @@ export function advance() {
 }
 
 function newRound() {
-	fetchData();
+	setData();
 	toggleBtn()
 	toggleBtns()
 	assignCorrect()
@@ -33,8 +34,3 @@ function newRound() {
 	updateQuestion();
 }
 
-function endGame() {
-	document.getElementById("game").classList.add("hidden")
-	document.getElementById("finish").classList.remove("hidden")
-	
-}

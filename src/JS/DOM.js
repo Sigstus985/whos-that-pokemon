@@ -42,3 +42,9 @@ export function toggleBtns() {
 	button3.disabled = !button3.disabled
 	button4.disabled = !button4.disabled
 }
+
+export function endGame() {
+	document.getElementById("game").classList.add("hidden")
+	document.getElementById("finish").classList.remove("hidden")
+	
+}

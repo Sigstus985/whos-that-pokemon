@@ -7,8 +7,6 @@
 	--green: #0eae03;
 	--red: #b11010;
 	--white: #fff;
-
-	--main-font: 'Luckiest Guy',
 }
 
 * {
@@ -36,19 +34,16 @@ body {
 	padding: 2% 10%;
 }
 
-.slider{
-
-}
-
 .output{
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Luckiest Guy';
 	font-size: 1.5rem;
-	color: var(--dark-blue);
+	margin-block: 5px;
+	color: var(--blue);
 }
 
 .pokeball {
 	max-width: 225px;
-	margin-block: 30px;
+	margin-block: 15px;
 }
 
 .score {
@@ -94,6 +89,17 @@ body {
 	width: 40%;
 	cursor: pointer;
 	transition-duration: 0.2s;
+}
+
+.eval{
+	margin: 15px 10%;
+}
+
+.end-score{
+	margin-block: 15px;
+	font-family: 'Luckiest Guy';
+	color: var(--blue);
+	font-size: 3rem;
 }
 
 .button:active {

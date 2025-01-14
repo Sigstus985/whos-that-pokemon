@@ -1,7 +1,7 @@
 const scoreEl = document.getElementById("score");
 const questionEl = document.getElementById("question")
 
-let score = 0;
+export let score = 0;
 let currentQuestion = 1;
 
 

@@ -10,7 +10,7 @@
 	<section class="intro" id="intro">
 		<h2 class="rounds" id="rounds">Welcome! How many rounds would you like to play?</h2>
 		<input class="slider" id="slider" type="range" min="10" max="20" step="1" oninput="this.nextElementSibling.value = this.value"/>
-		<output class="output" id="output"></output>
+		<output class="output" id="output">Rounds</output>
 		<img
 			class="pokeball"
 			id="pokeball"
@@ -37,9 +37,9 @@
 		<button class="next-button hidden" id="next">Next</button>
 	</section>
 	<section class="hidden" id="finish"> 
-		<h2>Game over!</h2>
-		<h3>You're kinda bad at this...</h3>
-		<h2>Score here</h2>
+		<h2 class="game-over">Game over!</h2>
+		<h3 class="eval" id="eval">You're kinda bad at this...</h3>
+		<h2 class="end-score" id="end-score">Score here</h2>
 		<button class="button">Play again...</button>
 	</section>
 </html>

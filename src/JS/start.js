@@ -14,7 +14,7 @@ pokeball.addEventListener("click", () => {
 export function startGame() {
 	document.getElementById("intro").classList.add("hidden");
 	document.getElementById("game").classList.remove("hidden");
-    localStorage.setItem("numberOfTurns",  document.getElementById("slider").value)
+    localStorage.setItem("numberOfTurns", document.getElementById("slider").value)
 	//playIntro()
     setData();
 	assignCorrect();

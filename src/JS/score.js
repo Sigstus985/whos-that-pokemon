@@ -2,7 +2,7 @@ const scoreEl = document.getElementById("score");
 const questionEl = document.getElementById("question")
 
 export let score = 0;
-let currentQuestion = 1;
+export let currentQuestion = 1;
 
 
 export function displayScore() {
@@ -25,4 +25,9 @@ export function modifyScore(isCorrect) {
 	currentQuestion += 1
 	localStorage.setItem("currentQuestion", currentQuestion)
     displayScore()
+}
+
+export function reset() {
+	score = 0
+    currentQuestion = 1
 }

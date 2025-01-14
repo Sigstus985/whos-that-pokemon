@@ -2,13 +2,9 @@ import { setData } from "./api";
 import { assignCorrect } from "./assignCorrect";
 import { displayQuestion, toggleBtns } from "./DOM";
 import { updateQuestion } from "./score";
-import { endGame } from "./DOM";
+import { endGame } from "./end";
 
 const nextBtn = document.getElementById("next");
-
-document.getElementById("next").addEventListener("click", () => {
-	advance();
-});
 
 export function toggleBtn() {
 	nextBtn.classList.toggle("hidden");

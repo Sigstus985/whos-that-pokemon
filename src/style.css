@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 
 :root {
 	--yellow: #f9c934;
@@ -34,8 +34,8 @@ body {
 	padding: 2% 10%;
 }
 
-.output{
-	font-family: 'Luckiest Guy';
+.output {
+	font-family: "Luckiest Guy";
 	font-size: 1.5rem;
 	margin-block: 5px;
 	color: var(--blue);
@@ -50,7 +50,7 @@ body {
 	color: var(--blue);
 	font-size: 2rem;
 	transition-duration: 0.4s;
-	font-family: 'Luckiest Guy';
+	font-family: "Luckiest Guy";
 }
 
 .sprite {
@@ -91,13 +91,13 @@ body {
 	transition-duration: 0.2s;
 }
 
-.eval{
+.eval {
 	margin: 15px 10%;
 }
 
-.end-score{
+.end-score {
 	margin-block: 15px;
-	font-family: 'Luckiest Guy';
+	font-family: "Luckiest Guy";
 	color: var(--blue);
 	font-size: 3rem;
 }
@@ -147,7 +147,7 @@ body {
 		margin: 10px;
 		padding-block: 5px;
 	}
-	.score{
+	.score {
 		font-size: 3rem;
 	}
 }
@@ -157,8 +157,7 @@ body {
 	.sprite {
 		width: 250px;
 	}
-	.score{
+	.score {
 		font-size: 5rem;
 	}
 }
-

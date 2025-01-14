@@ -2,6 +2,7 @@ import { toggleBtns } from "./DOM";
 import { toggleBtn } from "./advance";
 import { modifyScore } from "./score";
 import { advance } from "./advance";
+import { restart } from "./restart";
 
 document.querySelectorAll(".button").forEach(function (button) {
 	button.addEventListener("click", (event) => {
@@ -9,15 +10,22 @@ document.querySelectorAll(".button").forEach(function (button) {
 	});
 });
 
+document.getElementById("next").addEventListener("click", () => {
+	advance();
+});
+
+document.getElementById("restart").addEventListener("click", () => {
+	restart();
+});
+
 export function check(buttonNum) {
 	const correctNumber = Number(localStorage.getItem("correctNum"));
-	//console.log(Number(document.getElementById().value))
 	if (correctNumber === buttonNum) {
 		modifyScore(true);
-		toggleBtn()
+		toggleBtn();
 	} else {
 		modifyScore(false);
-		toggleBtn()
+		toggleBtn();
 	}
 	toggleBtns();
 }

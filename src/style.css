@@ -9,6 +9,7 @@
 	--white: #fff;
 }
 
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -35,10 +36,10 @@ body {
 }
 
 .output {
+	color: var(--blue);
 	font-family: "Luckiest Guy";
 	font-size: 1.5rem;
 	margin-block: 5px;
-	color: var(--blue);
 }
 
 .pokeball {
@@ -48,9 +49,9 @@ body {
 
 .score {
 	color: var(--blue);
+	font-family: "Luckiest Guy";
 	font-size: 2rem;
 	transition-duration: 0.4s;
-	font-family: "Luckiest Guy";
 }
 
 .sprite {
@@ -69,11 +70,11 @@ body {
 	background-color: var(--blue);
 	color: var(--white);
 	font-size: 1.5rem;
-	padding-block: 1.2vh;
 	border-style: none;
 	border-radius: 10px;
-	margin: 0px 10px 10px 10px;
 	width: max(175px, 70%);
+	margin: 0px 10px 10px 10px;
+	padding-block: 1.2vh;
 	cursor: pointer;
 	transition-duration: 0.2s;
 }
@@ -82,11 +83,11 @@ body {
 	background-color: var(--blue);
 	color: var(--white);
 	font-size: 1.5rem;
-	padding-block: 1.2vh;
 	border-style: none;
 	border-radius: 10px;
-	margin: 0px 10px 10px 10px;
 	width: 40%;
+	margin: 0px 10px 10px 10px;
+	padding-block: 1.2vh;
 	cursor: pointer;
 	transition-duration: 0.2s;
 }
@@ -96,10 +97,10 @@ body {
 }
 
 .end-score {
-	margin-block: 15px;
-	font-family: "Luckiest Guy";
 	color: var(--blue);
+	font-family: "Luckiest Guy";
 	font-size: 3rem;
+	margin-block: 15px;
 }
 
 .button:active {
@@ -122,10 +123,10 @@ body {
 		flex-flow: row wrap;
 	}
 	.score {
-		font-size: 2rem;
 		position: absolute;
 		top: 15%;
 		right: 10%;
+		font-size: 2rem;
 	}
 }
 
@@ -137,8 +138,8 @@ body {
 		flex-flow: row wrap;
 	}
 	.button {
-		width: 40%;
 		font-size: 2.5rem;
+		width: 40%;
 		margin: 10px;
 		padding-block: 5px;
 	}

@@ -2,7 +2,6 @@ import { setData } from "./api";
 import { assignCorrect } from "./assignCorrect";
 import { displayQuestion } from "./DOM";
 import { toggleBtn } from "./advance";
-import { playIntro } from "./playIntro";
 import { displayScore, updateQuestion } from "./score";
 
 const pokeball = document.getElementById("pokeball");

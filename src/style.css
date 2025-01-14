@@ -118,7 +118,6 @@ body {
 }
 
 @media (min-width: 425px) {
-	/* here goes the small tablet style */
 	.buttons {
 		flex-flow: row wrap;
 	}
@@ -128,13 +127,9 @@ body {
 		top: 15%;
 		right: 10%;
 	}
-	/* .button {
-		font-size: 1.8rem;
-	} */
 }
 
 @media (min-width: 550px) {
-	/* here goes the big tablet style */
 	.sprite {
 		width: 200px;
 	}
@@ -153,7 +148,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-	/* here goes the computer style */
 	.sprite {
 		width: 250px;
 	}

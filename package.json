@@ -3,8 +3,11 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
+    "predeploy": "npm run start",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack"
+		"build": "webpack --config webpack.config.js",
+		"deploy": "gh-pages -d build",
+    "start": "webpack serve --open"
 	},
 	"keywords": [],
 	"author": "",

@@ -8,6 +8,7 @@ const sprite = document.getElementById("sprite");
 export function displayQuestion() {
 	//fetch necessary information
 	const pokeArray = JSON.parse(localStorage.getItem("unfinArray"));
+	console.log(pokeArray)
 	const correctNumber = Number(localStorage.getItem("correctNum"));
 	//function to correctly capitalize pokemon names
 	function capitalize(val) {

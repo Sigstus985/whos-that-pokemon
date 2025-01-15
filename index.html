@@ -1,1 +1,44 @@
-<head><script defer src="main.js"></script></head>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Who's that pokémon?</title>
+	<script defer src="main.js"></script></head>
+	<img class="logo" id="logo" src="49002ec85a1a4a43353f.png" alt="picture" />
+	<section class="intro" id="intro">
+		<h2 class="rounds" id="rounds">Welcome! How many rounds would you like to play?</h2>
+		<input class="slider" id="slider" type="range" min="10" max="20" step="1" oninput="this.nextElementSibling.value = this.value"/>
+		<output class="output" id="output">Rounds</output>
+		<img
+			class="pokeball"
+			id="pokeball"
+			src="ca00d7582a500eba90b8.png"
+			alt="a pixelart of a pokeball"
+		/>
+		<h2>Press the pokéball to start!</h2>
+	</section>
+	<section class="hidden" id="game">
+		<h2 class="question" id="question">This is the current question number</h2>
+		<h2 class="score" id="score">Here is your score</h2>
+		<img
+			class="sprite"
+			id="sprite"
+			src="#"
+			alt="a sprite of the relevant pokémon"
+		/>
+		<div class="buttons" id="buttons">
+			<button value="0" class="button" id="btn1"></button>
+			<button value="1" class="button" id="btn2"></button>
+			<button value="2" class="button" id="btn3"></button>
+			<button value="3" class="button" id="btn4"></button>
+		</div>
+		<button class="next-button hidden" id="next">Next</button>
+	</section>
+	<section class="hidden" id="finish"> 
+		<h2 class="game-over">Game over!</h2>
+		<h3 class="eval" id="eval">You're kinda bad at this...</h3>
+		<h2 class="end-score" id="end-score">Score here</h2>
+		<button class="button" id="restart">Play again...</button>
+	</section>
+</html>

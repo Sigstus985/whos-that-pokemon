@@ -10,13 +10,10 @@ document.querySelectorAll(".button").forEach(function (button) {
 	});
 });
 
-document.getElementById("next").addEventListener("click", () => {
-	advance();
-});
+document.getElementById("next").onclick = advance
 
-document.getElementById("restart").addEventListener("click", () => {
-	restart();
-});
+
+document.getElementById("restart").onclick = restart
 
 export function check(buttonNum) {
 	const correctNumber = Number(localStorage.getItem("correctNum"));

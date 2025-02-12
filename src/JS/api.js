@@ -21,7 +21,5 @@ export async function setData() {
 		let pokemon = await fetchData()
 		pokeArray.push(pokemon)
 	}
-	console.log("––––––––––––––––––")
-	console.log(pokeArray)
 	localStorage.setItem("unfinArray", JSON.stringify(pokeArray));
 }

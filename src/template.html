@@ -7,15 +7,20 @@
 	</head>
 	<img class="logo" id="logo" src="media/logo.png" alt="picture" />
 	<section class="intro" id="intro">
-		<h2 class="rounds" id="rounds">Welcome! How many rounds would you like to play?</h2>
-		<input class="slider" id="slider" type="range" min="10" max="20" step="1" oninput="this.nextElementSibling.value = this.value"/>
-		<output class="output" id="output">Rounds</output>
-		<img
-			class="pokeball"
-			id="pokeball"
-			src="media/pokeball.png"
-			alt="a pixelart of a pokeball"
+		<h2 class="rounds" id="rounds">
+			Welcome! How many rounds would you like to play?
+		</h2>
+		<input
+			class="slider"
+			id="slider"
+			type="range"
+			min="10"
+			max="20"
+			step="1"
+			oninput="this.nextElementSibling.value = this.value"
 		/>
+		<output class="output" id="output">Rounds</output>
+		<input type="image" src="media/pokeball.png" class="pokeball" id="pokeball">
 		<h2>Press the pokéball to start!</h2>
 	</section>
 	<section class="hidden" id="game">
@@ -35,7 +40,7 @@
 		</div>
 		<button class="next-button hidden" id="next">Next</button>
 	</section>
-	<section class="hidden" id="finish"> 
+	<section class="hidden" id="finish">
 		<h2 class="game-over">Game over!</h2>
 		<h3 class="eval" id="eval">You're kinda bad at this...</h3>
 		<h2 class="end-score" id="end-score">Score here</h2>

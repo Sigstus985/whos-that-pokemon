@@ -1,5 +1,4 @@
-import "./style.css"
-
+import "./style.css";
 
 import { assignCorrect } from "./JS/assignCorrect";
 import { displayQuestion } from "./JS/DOM";
@@ -9,5 +8,5 @@ import { displayScore, updateQuestion } from "./JS/score";
 import { startGame } from "./JS/start";
 
 window.addEventListener("load", (event) => {
-    setData()
-});  
+  setData();
+});

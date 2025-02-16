@@ -1,4 +1,4 @@
 export function assignCorrect() {
-	const correctNumber = Number(Math.floor(Math.random() * 4));
-	localStorage.setItem("correctNum", correctNumber)
+  // this can be simplified to one line
+  localStorage.setItem("correctNum", Math.floor(Math.random() * 4));
 }

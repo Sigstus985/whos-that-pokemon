@@ -5,21 +5,21 @@ import { toggleBtn } from "./advance";
 import { displayScore, updateQuestion } from "./score";
 
 document.getElementById("pokeball").onclick = function hello() {
-	startGame();
+  startGame();
 };
 
 export function startGame() {
-	setTimeout(() => {
-		document.getElementById("intro").classList.add("hidden");
-		document.getElementById("game").classList.remove("hidden");
-		localStorage.setItem(
-			"numberOfTurns",
-			document.getElementById("slider").value
-		);
-		setData();
-		assignCorrect();
-		displayQuestion();
-		updateQuestion();
-		displayScore();
-	}, 500);
+  setTimeout(() => {
+    document.getElementById("intro").classList.add("hidden");
+    document.getElementById("game").classList.remove("hidden");
+    localStorage.setItem(
+      "numberOfTurns",
+      document.getElementById("slider").value
+    );
+    setData();
+    assignCorrect();
+    displayQuestion();
+    updateQuestion();
+    displayScore();
+  }, 500);
 }
